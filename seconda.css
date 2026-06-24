@@ -1,0 +1,36 @@
+.sezione-vita {
+    padding: 100px 50px;
+    background-color: rgb(14, 14, 14);
+    color: white;
+}
+
+.titolo-sezione {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.contenitore-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.testo-vita {
+    flex: 1;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.immagine-vita {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.immagine-vita img {
+    max-width: 100%;
+    border-radius: 10px;
+}
