@@ -1,0 +1,61 @@
+@import "../links.css";
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #584B41;
+    font-family: 'Arial', sans-serif;
+}
+
+article {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    width: 100%;
+    height: 150vh;
+    background-color: #0E0E0E;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.artista-foto {
+    border-radius: 8px;
+    width: 70%;
+    height: auto;
+
+}
+
+.masked-text {
+    display: flex;
+    font-size: 10rem;
+    font-weight: bold;
+    color: transparent;
+    background-image: url('https://images.hdqwalls.com/wallpapers/kendrick-lamar-in-halftime-show-at-the-super-bowl-2025-ye.jpg');
+    background-size: 120%;
+    /* Enlarged for smooth animation */
+    background-position: 0 50%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-background 5s infinite alternate linear;
+}
+
+@keyframes animate-background {
+    0% {
+        background-position: 0 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
