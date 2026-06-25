@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'KingKendrick';
+    src: url('../fonts/KingKendrick.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.gkmd {
+    min-height: 150vh;
+    background-color: #0D0D0D;
+    background: linear-gradient(180deg,
+            #1A1F1C 0%,
+            #0B0D0E 30%,
+            #252E36 100%);
+    padding: 100px 50px;
+    color: #DEDACE;
+}
+
+.Titolo-gkmd {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.Titolo-gkmd h1 {
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-family: 'KingKendrick', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #E1E5E8;
+}
+
+.testo-gkmc {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: 650px;
+}
+
+.testo-gkmc p {
+    font-family: 'Helvetica', sans-serif;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.copertina-gkmc {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.copertina-gkmc img {
+    max-width: 100%;
+    border-radius: 10px;
+    height: auto;
+    max-height: 800px;
+    object-fit: cover;
+}
+
+@media (max-width: 992px) {
+    .copertina-gkmc {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .gkmd {
+        padding: 80px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gkmd {
+        padding: 50px 15px;
+    }
+
+    .testo-gkmc {
+        font-size: 1rem;
+    }
+
+    .testo-gkmc p {
+        margin-top: 15px;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .copertina-gkmc img {
+        max-height: 500px;
+    }
+}
