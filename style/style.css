@@ -7,3 +7,11 @@
 @import url(./settima.css);
 @import url(./ottava.css);
 @import url(./nona.css);
+
+body {
+    min-height: 100vh;
+    background: #584B41;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+}

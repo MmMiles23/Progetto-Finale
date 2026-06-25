@@ -5,12 +5,7 @@
     margin: 0;
 }
 
-body {
-    min-height: 100vh;
-    background: #584B41;
-    font-family: 'Arial', sans-serif;
-    overflow-x: hidden;
-}
+
 
 article {
     width: 100%;
@@ -63,7 +58,7 @@ img.artista-foto {
 
 .masked-text {
     margin: 0;
-    font-size: clamp(3rem, 12vw, 8rem);
+    font-size: clamp(3rem, 7vw, 8rem);
     line-height: 1.1;
     font-weight: bold;
     color: transparent;
