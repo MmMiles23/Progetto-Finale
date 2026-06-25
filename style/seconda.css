@@ -1,8 +1,8 @@
 .sezione-vita {
     padding: 100px 50px;
     background-color: #0D0D0D;
-    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 1.5px, transparent 2.08px);
-    background-size: 26px 65px;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 1.5px, transparent 0.8px);
+    background-size: 26px 60px;
     color: #E1E5E8;
 }
 
@@ -151,10 +151,35 @@ p {
 @media (max-width: 992px) {
     .contenitore-layout {
         flex-direction: column;
+        gap: 30px;
     }
 
     .immagine-vita {
         justify-content: center;
         width: 100%;
+    }
+    
+    .sezione-vita {
+        padding: 80px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sezione-vita {
+        padding: 50px 15px;
+    }
+
+    .testo-vita {
+        font-size: 1rem;
+    }
+
+    p {
+        margin-top: 25px;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .immagine-vita img {
+        max-height: 500px;
     }
 }

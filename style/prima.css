@@ -1,4 +1,4 @@
-@import "../links.css";
+@import "./links.css";
 
 * {
     padding: 0;
@@ -105,7 +105,7 @@ img.artista-foto {
     .artista-info {
         width: 100%;
     }
-    
+
     .masked-text {
         font-size: clamp(3rem, 14vw, 8rem);
     }
@@ -121,7 +121,7 @@ img.artista-foto {
         width: 75%;
         max-width: 280px;
     }
-    
+
     .masked-text {
         font-size: clamp(2.5rem, 14vw, 8rem);
     }
