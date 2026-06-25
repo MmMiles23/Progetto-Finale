@@ -22,7 +22,7 @@
 }
 
 .Titolo-gkmd h1 {
-    font-size: clamp(3rem, 8vw, 6rem);
+    font-size: clamp(1.4rem, 5vw, 4.5rem);
     font-family: 'KingKendrick', sans-serif;
     text-transform: uppercase;
     text-shadow: 0 0 10px #E1E5E8;
@@ -46,7 +46,21 @@
 .copertina-gkmc {
     flex: 1;
     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.gkmc-preview {
+    width: 100%;
+    display: flex;
     justify-content: flex-end;
+}
+
+.gkmc-preview iframe {
+    width: 69%;
+    min-width: 280px;
+    max-width: 600px;
 }
 
 .copertina-gkmc img {
@@ -59,8 +73,12 @@
 
 @media (max-width: 992px) {
     .copertina-gkmc {
-        justify-content: center;
+        align-items: center;
         width: 100%;
+    }
+
+    .gkmc-preview {
+        justify-content: center;
     }
 
     .gkmd {
@@ -85,5 +103,49 @@
 
     .copertina-gkmc img {
         max-height: 500px;
+    }
+
+    .gkmc-preview iframe {
+        width: 100% !important;
+        /* Allarga il player su mobile ignorando il width nell'HTML */
+    }
+}
+
+/* Animation Typewriter per il titolo */
+.line-1 {
+    position: relative;
+    width: 14em;
+    /* Adattato alla lunghezza del titolo 'GOOD KID M.A.A.D CITY' */
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.anim-typewriter {
+    animation: typewriter 3s steps(21) 1s 1 normal both,
+        blinkTextCursor 500ms steps(21) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 14em;
+    }
+
+    /* Stessa larghezza definita in .line-1 */
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+
+    to {
+        border-right-color: transparent;
     }
 }
