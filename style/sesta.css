@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'Times';
+    src: url('../fonts/times.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.damn {
+    min-height: 150vh;
+    background-color: var(--bg-dark);
+    background: linear-gradient(180deg,
+            #1C1D1F 0%,
+            #2B0E13 25%,
+            #5A0B14 100%);
+    padding: var(--section-padding);
+    color: var(--text-secondary);
+}
+
+.Titolo-damn {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.Titolo-damn h1 {
+    font-size: clamp(1.4rem, 5vw, 4.5rem);
+    font-family: 'Times', serif;
+    text-transform: uppercase;
+    color: #f50302;
+    letter-spacing: 4.6px;
+}
+
+.testo-damn {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: 650px;
+}
+
+.testo-damn p {
+    font-family: var(--font-text-primary);
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.immagine-damn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.damn-preview {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.damn-preview iframe {
+    width: 100%;
+    min-width: 280px;
+    max-width: 600px;
+}
+
+.immagine-damn img {
+    max-width: 82%;
+    border-radius: 10px;
+    height: auto;
+    max-height: 800px;
+    object-fit: cover;
+}
+
+@media (max-width: 992px) {
+    .immagine-damn {
+        align-items: center;
+        width: 100%;
+    }
+
+    .damn-preview {
+        justify-content: center;
+    }
+
+    .damn {
+        padding: 80px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .damn {
+        padding: 50px 15px;
+    }
+
+    .testo-damn {
+        font-size: 1rem;
+    }
+
+    .testo-damn p {
+        margin-top: 15px;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .immagine-damn img {
+        max-height: 500px;
+    }
+
+    .damn-preview iframe {
+        width: 100% !important;
+    }
+}
+
+/* Animation Typewriter per il titolo DAMN. */
+.line-damn {
+    position: relative;
+    width: 3.5em; /* Adattato alla lunghezza di 'DAMN.' */
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.anim-typewriter-damn {
+    animation: typewriter-damn 2s steps(5) 1s 1 normal both,
+        blinkTextCursor-damn 500ms steps(5) infinite normal;
+}
+
+@keyframes typewriter-damn {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 3.5em;
+    }
+}
+
+@keyframes blinkTextCursor-damn {
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}

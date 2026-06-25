@@ -110,42 +110,4 @@
         /* Allarga il player su mobile ignorando il width nell'HTML */
     }
 }
-
-/* Animation Typewriter per il titolo */
-.line-1 {
-    position: relative;
-    width: 14em;
-    /* Adattato alla lunghezza del titolo 'GOOD KID M.A.A.D CITY' */
-    margin: 0 auto;
-    border-right: 2px solid rgba(255, 255, 255, .75);
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-}
-
-.anim-typewriter {
-    animation: typewriter 3s steps(21) 1s 1 normal both,
-        blinkTextCursor 500ms steps(21) infinite normal;
-}
-
-@keyframes typewriter {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 14em;
-    }
-
-    /* Stessa larghezza definita in .line-1 */
-}
-
-@keyframes blinkTextCursor {
-    from {
-        border-right-color: rgba(255, 255, 255, .75);
-    }
-
-    to {
-        border-right-color: transparent;
-    }
-}
+
