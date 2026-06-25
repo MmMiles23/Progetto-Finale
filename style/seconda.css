@@ -1,7 +1,8 @@
 .sezione-vita {
     padding: 100px 50px;
-    background: #0D0D0D;
-    background: linear-gradient(180deg, rgba(13, 13, 13, 1) 5%, rgba(54, 71, 84, 1) 54%);
+    background-color: #0D0D0D;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 1.5px, transparent 2.08px);
+    background-size: 26px 65px;
     color: #E1E5E8;
 }
 
@@ -13,6 +14,7 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
 
 .jt {
     position: relative;
@@ -102,10 +104,6 @@
     }
 }
 
-
-
-
-
 * {
     box-sizing: border-box;
 }
@@ -113,14 +111,20 @@
 .contenitore-layout {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     gap: 40px;
+    align-items: flex-start;
 }
 
 .testo-vita {
     flex: 1;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.6;
+    max-width: 650px;
+    line-height: 1.7;
+}
+
+.testo-vita p {
+    font-family: 'Manrope', sans-serif;
 }
 
 .immagine-vita {
@@ -138,7 +142,9 @@
 }
 
 p {
-    padding: 10px;
+    padding: 15px;
+    margin-top: 50px;
+    font-size: 20px;
 }
 
 /* Responsività Sezione Vita */
@@ -146,7 +152,7 @@ p {
     .contenitore-layout {
         flex-direction: column;
     }
-    
+
     .immagine-vita {
         justify-content: center;
         width: 100%;

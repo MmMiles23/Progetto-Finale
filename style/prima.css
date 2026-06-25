@@ -75,7 +75,8 @@ img.artista-foto {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: animate-background 5s infinite alternate linear;
-    word-break: break-word;
+    word-break: normal;
+    overflow-wrap: normal;
 }
 
 @keyframes animate-background {
@@ -91,17 +92,22 @@ img.artista-foto {
 /* Responsive Styles */
 @media (max-width: 992px) {
     .hero {
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding: 4rem 1.5rem;
         gap: 3rem;
     }
 
     div.artista-foto {
-        width: 80%;
+        width: 60%;
+        max-width: 350px;
     }
 
     .artista-info {
         width: 100%;
+    }
+    
+    .masked-text {
+        font-size: clamp(3rem, 14vw, 8rem);
     }
 }
 
@@ -112,10 +118,11 @@ img.artista-foto {
     }
 
     div.artista-foto {
-        width: 95%;
+        width: 75%;
+        max-width: 280px;
     }
-}
-
-.masked-text {
-    font-size: clamp(3rem, 8vw, 8rem);
+    
+    .masked-text {
+        font-size: clamp(2.5rem, 14vw, 8rem);
+    }
 }
