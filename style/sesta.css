@@ -22,11 +22,12 @@
 }
 
 .Titolo-damn h1 {
-    font-size: clamp(1.4rem, 5vw, 4.5rem);
+    font-size: clamp(2.4rem, 7vw, 6.5rem);
     font-family: 'Times', serif;
     text-transform: uppercase;
-    color: #f50302;
     letter-spacing: 4.6px;
+    -webkit-text-stroke: 1px #f50302;
+    color: transparent;
 }
 
 .testo-damn {
@@ -114,7 +115,8 @@
 /* Animation Typewriter per il titolo DAMN. */
 .line-damn {
     position: relative;
-    width: 3.5em; /* Adattato alla lunghezza di 'DAMN.' */
+    width: 3.5em;
+    /* Adattato alla lunghezza di 'DAMN.' */
     margin: 0 auto;
     border-right: 2px solid rgba(255, 255, 255, .75);
     text-align: center;
