@@ -1,9 +1,9 @@
 .sezione-vita {
-    padding: 100px 50px;
-    background-color: #0D0D0D;
+    padding: var(--section-padding);
+    background-color: var(--bg-dark);
     background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 1.5px, transparent 0.8px);
     background-size: 26px 60px;
-    color: #E1E5E8;
+    color: var(--text-primary);
 }
 
 .titolo-sezione {
@@ -19,10 +19,10 @@
 .jt {
     position: relative;
     font-size: clamp(4rem, 15vw, 12rem);
-    font-family: 'Staatliches', sans-serif;
+    font-family: var(--font-title);
     text-transform: uppercase;
     font-display: swap;
-    text-shadow: 0 0 10px #E1E5E8;
+    text-shadow: var(--shadow-glow);
     margin: 0 auto 50px auto;
     width: fit-content;
 }
@@ -124,7 +124,7 @@
 }
 
 .testo-vita p {
-    font-family: 'Manrope', sans-serif;
+    font-family: var(--font-text-secondary);
 }
 
 .immagine-vita {

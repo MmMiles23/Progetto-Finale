@@ -8,6 +8,21 @@
 @import url(./ottava.css);
 @import url(./nona.css);
 
+:root {
+    --bg-dark: #0D0D0D;
+    --bg-gradient-end: #1A1F1C;
+    --text-primary: #E1E5E8;
+    --text-secondary: #DEDACE;
+    --accent-red: #BA151C;
+    --font-title: 'Staatliches', sans-serif;
+    --font-special: 'KingKendrick', sans-serif;
+    --font-text-primary: 'Helvetica', sans-serif;
+    --font-text-secondary: 'Manrope', sans-serif;
+
+    --shadow-glow: 0 0 10px var(--text-primary);
+    --section-padding: 100px 50px;
+}
+
 body {
     min-height: 100vh;
     background: #584B41;

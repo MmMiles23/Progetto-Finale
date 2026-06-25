@@ -1,9 +1,9 @@
 .section-08 {
     min-height: 150vh;
-    background-color: #0D0D0D;
-    background: linear-gradient(180deg, #0D0D0D 0%, #1A1F1C 100%);
-    padding: 100px 50px;
-    color: #DEDACE;
+    background-color: var(--bg-dark);
+    background: linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-gradient-end) 100%);
+    padding: var(--section-padding);
+    color: var(--text-secondary);
 }
 
 .immagine-section08 {
@@ -26,7 +26,7 @@
     line-height: 1.7;
     max-width: 650px;
     margin-top: 0px;
-    font-family: 'Helvetica', sans-serif;
+    font-family: var(--font-text-primary);
 }
 
 .testo-section08 p {

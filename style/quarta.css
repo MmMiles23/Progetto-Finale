@@ -7,13 +7,13 @@
 
 .gkmd {
     min-height: 150vh;
-    background-color: #0D0D0D;
+    background-color: var(--bg-dark);
     background: linear-gradient(180deg,
-            #1A1F1C 0%,
+            var(--bg-gradient-end) 0%,
             #0B0D0E 30%,
             #252E36 100%);
-    padding: 100px 50px;
-    color: #DEDACE;
+    padding: var(--section-padding);
+    color: var(--text-secondary);
 }
 
 .Titolo-gkmd {
@@ -23,9 +23,9 @@
 
 .Titolo-gkmd h1 {
     font-size: clamp(1.4rem, 5vw, 4.5rem);
-    font-family: 'KingKendrick', sans-serif;
+    font-family: var(--font-special);
     text-transform: uppercase;
-    text-shadow: 0 0 10px #E1E5E8;
+    text-shadow: var(--shadow-glow);
 }
 
 .testo-gkmc {
@@ -36,7 +36,7 @@
 }
 
 .testo-gkmc p {
-    font-family: 'Helvetica', sans-serif;
+    font-family: var(--font-text-primary);
     padding: 10px;
     margin-top: 20px;
     font-size: 18px;
