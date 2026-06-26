@@ -147,6 +147,13 @@ p {
     font-size: 20px;
 }
 
+hr.barra-vita {
+    height: 2px;
+    background-color: #374959;
+    margin: 50px 0;
+    border: none;
+}
+
 /* Responsività Sezione Vita */
 @media (max-width: 992px) {
     .contenitore-layout {

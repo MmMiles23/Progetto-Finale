@@ -86,6 +86,13 @@
     }
 }
 
+hr.barra-gkmc {
+    height: 2px;
+    background-color: #4f89ad;
+    margin: 50px 0;
+    border: none;
+}
+
 @media (max-width: 768px) {
     .gkmd {
         padding: 50px 15px;
@@ -110,4 +117,3 @@
         /* Allarga il player su mobile ignorando il width nell'HTML */
     }
 }
-
