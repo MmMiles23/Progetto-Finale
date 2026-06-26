@@ -62,10 +62,10 @@
 
 
 hr.barra-tpab {
-    height: 2px;
+    height: var(--hr-height);
     background-color: #232428;
-    margin: 50px 0;
-    border: none;
+    margin: var(--hr-margin);
+    border: var(--hr-border);
 }
 
 

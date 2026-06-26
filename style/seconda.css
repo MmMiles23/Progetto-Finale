@@ -148,10 +148,10 @@ p {
 }
 
 hr.barra-vita {
-    height: 2px;
+    height: var(--hr-height);
     background-color: #374959;
-    margin: 50px 0;
-    border: none;
+    margin: var(--hr-margin);
+    border: var(--hr-border);
 }
 
 /* Responsività Sezione Vita */

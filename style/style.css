@@ -19,6 +19,13 @@ html {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Belwe';
+    src: url('../fonts/Belwe.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --bg-dark: #0D0D0D;
     --bg-gradient-end: #1A1F1C;
@@ -27,11 +34,16 @@ html {
     --accent-red: #BA151C;
     --font-title: 'Staatliches', sans-serif;
     --font-special: 'KingKendrick', sans-serif;
+    --font-special2: 'Belwe', sans-serif;
     --font-text-primary: 'Futura', sans-serif;
     --font-text-secondary: 'Futura', sans-serif;
 
     --shadow-glow: 0 0 10px var(--text-primary);
     --section-padding: 100px 50px;
+
+    --hr-height: 2px;
+    --hr-margin: 50px 0;
+    --hr-border: none;
 }
 
 body {

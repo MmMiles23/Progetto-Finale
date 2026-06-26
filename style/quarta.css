@@ -87,10 +87,10 @@
 }
 
 hr.barra-gkmc {
-    height: 2px;
+    height: var(--hr-height);
     background-color: #4f89ad;
-    margin: 50px 0;
-    border: none;
+    margin: var(--hr-margin);
+    border: var(--hr-border);
 }
 
 @media (max-width: 768px) {
