@@ -20,12 +20,13 @@
 h1 .f1 {
     font-size: 80px;
     letter-spacing: 2.6px;
-    color: #eb2925
+    color: #eb2925;
 }
 
 h1 .f2 {
     font-size: 140px;
     color: black;
+    text-shadow: var(--shadow-glow);
 }
 
 .testo-gnx {
