@@ -1,7 +1,7 @@
 .gnx {
     min-height: 150vh;
     background-color: var(--bg-dark);
-    background: linear-gradient(180deg, #36251E 0%, #121314 54%, #C9D1D6 110%);
+    background: linear-gradient(180deg, #36251E 0%, #121314 75%, #d8e1dd 110%);
     padding: var(--section-padding);
     color: var(--text-secondary);
 }
@@ -17,9 +17,15 @@
     margin-top: 1px;
 }
 
-.titolo-gnx h1 {
-    font-size: clamp(3.4rem, 8vw, 7.5rem);
-    letter-spacing: 4.6px;
+h1 .f1 {
+    font-size: 80px;
+    letter-spacing: 2.6px;
+    color: #eb2925
+}
+
+h1 .f2 {
+    font-size: 140px;
+    color: black;
 }
 
 .testo-gnx {
@@ -66,15 +72,52 @@
 }
 
 hr.barra-gnx {
-    height: var(--hr-height);
-    background-color: #083b32;
+    height: 15px;
+    border: none;
     margin: var(--hr-margin);
-    border: var(--hr-border);
+    width: 100%;
+    opacity: 1;
+    background-image: linear-gradient(45deg, #eb2925 25%, transparent 25%, transparent 75%, #eb2925 75%),
+        linear-gradient(45deg, #eb2925 25%, transparent 25%, transparent 75%, #eb2925 75%);
+    background-size: 10px 10px;
+    background-position: 0 0, 5px 5px;
 }
 
+@media (max-width: 992px) {
+    .immagine-gnx {
+        align-items: center;
+        width: 100%;
+    }
 
-/* background-color: #ffffff;
-opacity: 1;
-background-image: linear-gradient(45deg, #ba1010 25%, transparent 25%, transparent 75%, #ba1010 75%), linear-gradient(45deg, #ba1010 25%, transparent 25%, transparent 75%, #ba1010 75%);
-background-size: 38px 38px;
-background-position: 0 0, 19px 19px;*/
+    .gnx-preview {
+        justify-content: center;
+    }
+
+    .gnx {
+        padding: 80px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gnx {
+        padding: 50px 15px;
+    }
+
+    .testo-gnx {
+        font-size: 1rem;
+    }
+
+    .testo-gnx p {
+        margin-top: 15px;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .immagine-gnx img {
+        max-height: 500px;
+    }
+
+    .gnx-preview iframe {
+        width: 100% !important;
+    }
+}
