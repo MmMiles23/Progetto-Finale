@@ -1,7 +1,12 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .gnx {
-    min-height: 150vh;
+    min-height: 100vh;
     background-color: var(--bg-dark);
-    background: linear-gradient(180deg, #36251E 0%, #121314 75%, #d8e1dd 110%);
+    background: linear-gradient(180deg, #36251E 0%, #121314 45%, #C9D1D6 100%);
     padding: var(--section-padding);
     color: var(--text-secondary);
 }

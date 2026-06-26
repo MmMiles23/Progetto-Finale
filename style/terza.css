@@ -1,5 +1,5 @@
 .section-08 {
-    min-height: 150vh;
+    min-height: 100vh;
     background-color: var(--bg-dark);
     background: linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-gradient-end) 100%);
     padding: var(--section-padding);

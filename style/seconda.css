@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
 
 .sezione-vita {
+    min-height: 100vh;
     padding: var(--section-padding);
     background-color: var(--bg-dark);
     background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 1.5px, transparent 0.8px);
@@ -113,6 +114,8 @@
     justify-content: space-between;
     gap: 40px;
     align-items: flex-start;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .testo-vita {
