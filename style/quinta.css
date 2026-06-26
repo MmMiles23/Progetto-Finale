@@ -1,5 +1,4 @@
 .tpab {
-    min-height: 100vh;
     background-color: var(--bg-dark);
     background: linear-gradient(180deg, #252E36 0%, #0A0A0A 40%, #1C1D1F 100%);
     padding: var(--section-padding);

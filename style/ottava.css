@@ -90,6 +90,10 @@ hr.barra-gnx {
 }
 
 @media (max-width: 992px) {
+    .gnx .contenitore-layout {
+        flex-direction: column;
+    }
+
     .immagine-gnx {
         align-items: center;
         width: 100%;
@@ -107,6 +111,15 @@ hr.barra-gnx {
 @media (max-width: 768px) {
     .gnx {
         padding: 50px 15px;
+    }
+
+    h1 .f1 {
+        font-size: 45px;
+        letter-spacing: 1.5px;
+    }
+
+    h1 .f2 {
+        font-size: 80px;
     }
 
     .testo-gnx {

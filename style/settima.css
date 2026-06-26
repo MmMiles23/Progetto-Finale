@@ -1,5 +1,4 @@
 .mr-morale {
-    min-height: 100vh;
     background-color: var(--bg-dark);
     background: linear-gradient(180deg, #5A0B14 0%, #140A0B 30%, #36251E 100%);
     padding: var(--section-padding);
