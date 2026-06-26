@@ -27,6 +27,20 @@ html {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'CityBold';
+    src: url('../fonts/CityBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Serifa';
+    src: url('../fonts/Serifa.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --bg-dark: #0D0D0D;
     --bg-gradient-end: #1A1F1C;
@@ -36,6 +50,8 @@ html {
     --font-title: 'Staatliches', sans-serif;
     --font-special: 'KingKendrick', sans-serif;
     --font-special2: 'Belwe', sans-serif;
+    --font-gnx1: 'CityBold', sans-serif;
+    --font-gnx2: 'Serifa', sans-serif;
     --font-text-primary: 'Futura', sans-serif;
     --font-text-secondary: 'Futura', sans-serif;
 
@@ -53,4 +69,12 @@ body {
     font-family: 'Arial', sans-serif;
     overflow-x: hidden;
     width: 100%;
+}
+
+.f1 {
+    font-family: var(--font-gnx1);
+}
+
+.f2 {
+    font-family: var(--font-gnx2);
 }

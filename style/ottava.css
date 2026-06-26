@@ -1,0 +1,80 @@
+.gnx {
+    min-height: 150vh;
+    background-color: var(--bg-dark);
+    background: linear-gradient(180deg, #36251E 0%, #121314 54%, #C9D1D6 110%);
+    padding: var(--section-padding);
+    color: var(--text-secondary);
+}
+
+.gnx .contenitore-layout {
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.titolo-gnx {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 1px;
+}
+
+.titolo-gnx h1 {
+    font-size: clamp(3.4rem, 8vw, 7.5rem);
+    letter-spacing: 4.6px;
+}
+
+.testo-gnx {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: 650px;
+}
+
+.testo-gnx p {
+    font-family: var(--font-text-primary);
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.immagine-gnx {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.gnx-preview {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.gnx-preview iframe {
+    width: 100%;
+    min-width: 280px;
+    max-width: 600px;
+}
+
+.immagine-gnx img {
+    max-width: 82%;
+    border-radius: 10px;
+    height: auto;
+    max-height: 800px;
+    object-fit: cover;
+}
+
+hr.barra-gnx {
+    height: var(--hr-height);
+    background-color: #083b32;
+    margin: var(--hr-margin);
+    border: var(--hr-border);
+}
+
+
+/* background-color: #ffffff;
+opacity: 1;
+background-image: linear-gradient(45deg, #ba1010 25%, transparent 25%, transparent 75%, #ba1010 75%), linear-gradient(45deg, #ba1010 25%, transparent 25%, transparent 75%, #ba1010 75%);
+background-size: 38px 38px;
+background-position: 0 0, 19px 19px;*/
